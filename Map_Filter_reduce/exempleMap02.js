@@ -10,8 +10,19 @@ const teachers = [
     {name: 'Angela', salary: 2500},
 ];
 
+let getList = (object, attribute) => {
+    return object[attribute];
+};
+
+let mapList = (list,key) => {
+    return list.map((item) => getList(item,key));
+};
+
+
 const byName = object => object.name;
 const byNames = list => list.map(byName);
 
-console.log(byNames(students));
-console.log(byNames(teachers));
+console.log(mapList(students,'grade'));
+
+//console.log(byNames(students));
+//console.log(byNames(teachers));
