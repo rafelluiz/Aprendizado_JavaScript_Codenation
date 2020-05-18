@@ -3,4 +3,4 @@ const isBiggerThanFour = value => value > 4;
 
 const numbersBiggerThenFour = numbers.filter(isBiggerThanFour);
 
-console.log(numbersBiggerThenFpour);
+console.log(numbersBiggerThenFour);
